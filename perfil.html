@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfiles</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #F1F3F6;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .grid {
+            width: 100%;
+            max-width: 1100px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            display: flex;
+            gap: 25px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .foto {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            object-fit: cover;
+            border: 3px solid #4C83FF;
+        }
+
+        .datos {
+            flex: 1;
+            background: #EAF0FF;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .datos h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .campo {
+            font-size: 17px;
+            margin-bottom: 12px;
+            padding: 10px;
+            background: white;
+            border-radius: 10px;
+            border-left: 5px solid #4C83FF;
+        }
+
+        .campo span {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+
+        <!-- Persona 1 -->
+        <div class="card">
+            <img src="oscar.jpg" class="foto">
+            <div class="datos">
+                <div class="campo"><span>Nombre:</span> Oscar Morales Barranco</div>
+                <div class="campo"><span>Sexo:</span> Masculino</div>
+                <div class="campo"><span>Carrera:</span> Ingeniería en Sistemas</div>
+                <div class="campo"><span>Experiencia Profesional:</span> 2 años como desarrollador web</div>
+            </div>
+        </div>
+
+        <!-- Persona 2 -->
+        <div class="card">
+            <img src="dalis.jpg" class="foto">
+            <div class="datos">
+                <div class="campo"><span>Nombre:</span> Dalia Flores Gonzales</div>
+                <div class="campo"><span>Sexo:</span> Femenino</div>
+                <div class="campo"><span>Carrera:</span> Ingeniería en Sistemas</div>
+                <div class="campo"><span>Experiencia Profesional:</span> 1 años como desarrollador web</div>
+            </div>
+        </div>
+
+        <!-- Persona 3 -->
+        <div class="card">
+            <img src="edgar.jpg" class="foto">
+            <div class="datos">
+                <div class="campo"><span>Nombre:</span> Edgar Felipe Cabañas</div>
+                <div class="campo"><span>Sexo:</span> Masculino</div>
+                <div class="campo"><span>Carrera:</span> Ingeniería en Sistemas</div>
+                <div class="campo"><span>Experiencia Profesional:</span> 1 años como desarrollador web</div>
+            </div>
+        </div>
+
+        <!-- Persona 4 -->
+        <div class="card">
+            <img src="tita.jpg" class="foto">
+            <div class="datos">
+                <div class="campo"><span>Nombre:</span> Dorisbeth Tita Guzman</div>
+                <div class="campo"><span>Sexo:</span> Femenino</div>
+                <div class="campo"><span>Carrera:</span> Ingeniería en Sistemas</div>
+                <div class="campo"><span>Experiencia Profesional:</span> 1 años como desarrollador web</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

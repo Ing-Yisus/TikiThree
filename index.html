@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('fondo.jpg');
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .login-container {
+            background: white;
+            width: 350px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #4C83FF;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #365FCC;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+
+        <input type="text" id="usuario" class="input-box" placeholder="Usuario">
+        <input type="password" id="password" class="input-box" placeholder="Contraseña">
+
+        <button class="btn" onclick="validarLogin()">Acceder</button>
+
+        <p id="errorMensaje" class="error">❌ Usuario o contraseña incorrectos</p>
+    </div>
+
+    <script>
+        function validarLogin() {
+            // Cambia aquí tu usuario y contraseña autorizados
+            const userValido = "oscar";
+            const passValida = "123";
+
+            const usuario = document.getElementById("usuario").value;
+            const password = document.getElementById("password").value;
+            const error = document.getElementById("errorMensaje");
+
+            if (usuario === userValido && password === passValida) {
+                window.location.href = "perfil.html";
+            } else {
+                error.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
